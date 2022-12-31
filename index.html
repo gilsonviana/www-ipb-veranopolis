@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./assets/styles/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
@@ -16,16 +17,16 @@
 
 <body class="page">
 
-  <div style="height: 55px;"></div>
+  <div style="height: 33px;"></div>
 
   <div class="header__mast border-bottom fixed-top">
-    <div class="container pt-3">
-      <p class="text-center">Nossa programacao: Domingos | 19hs . Estudo Biblico | 20hs</p>
+    <div class="container">
+      <p class="text-center py-1 m-0">Nossa programacao: Domingos às 19hs • Quinta-feira às 20hs</p>
     </div>
   </div>
 
   <header class="header bg-light bg-gradient">
-    <nav class="header__navbar navbar navbar-expand-lg bg-light-subtle">
+    <nav class="header__navbar navbar navbar-expand-lg bg-light-subtle py-4">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img class="header__navbar__logo img-fluid" src="./assets/images/logo.png"
@@ -38,19 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Nossa Missao</a>
+              <a class="nav-link" href="#quem-somos">Quem somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Lideranca</a>
+              <a class="nav-link" href="#lideranca">Liderança</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Endereco</a>
+              <a class="nav-link" href="#endereco">Endereço</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link btn btn-primary text-light" href="#">Doacao</a>
+              <a class="nav-link btn btn-primary text-light" href="#">Doação</a>
             </li>
           </ul>
         </div>
@@ -65,8 +63,8 @@
       <div class="container">
 
         <div class="px-4 pt-5 my-5 text-center">
-          <h1 class="display-4 fw-bold">Igreja Presbiteriana</h1>
-          <h1 class="display-4 fw-bold">Veranopolis</h1>
+          <h4 class="display-4 fw-bold">Igreja Presbiteriana do Brasil</h4>
+          <h1 class="display-1 fw-bold">Veranopólis</h1>
           <div class="col-lg-6 mx-auto">
             <p class="lead m-4">
               Uma Igreja calvinista que busca ter caráter cristão autêntico, disposta a
@@ -86,14 +84,16 @@
           <div class="col">
             <div class="card card-cover card-hover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0"
               style="background: url('./assets/images/home-boy.jpg') no-repeat; background-size: cover;"
-              data-bs-toggle="modal" data-bs-target="#missao-modal">
+              data-bs-toggle="modal" data-bs-target="#missao-modal" data-aos="fade-in" data-aos-duration="1000"
+              data-aos-offset="400">
               <div class="d-flex flex-column h-100 p-5 text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Missao</h3>
               </div>
             </div>
           </div><!-- /col -->
-  
-          <div class="modal modal-fullscreen-sm-down fade" id="missao-modal" tabindex="-1" aria-labelledby="missao" aria-hidden="true">
+
+          <div class="modal modal-fullscreen-sm-down fade" id="missao-modal" tabindex="-1" aria-labelledby="missao"
+            aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header border-0">
@@ -106,18 +106,20 @@
               </div>
             </div>
           </div>
-  
+
           <div class="col">
             <div class="card card-cover card-hover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0"
               style="background: url('./assets/images/home-girl.jpg') no-repeat; background-size: cover;"
-              data-bs-toggle="modal" data-bs-target="#oracao-modal">
+              data-bs-toggle="modal" data-bs-target="#oracao-modal" data-aos="fade-in" data-aos-duration="1000"
+              data-aos-offset="400" data-aos-delay="500">
               <div class="d-flex flex-column h-100 p-5 text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Oracao</h3>
               </div>
             </div>
           </div><!-- /col -->
-  
-          <div class="modal modal-fullscreen-sm-down fade" id="oracao-modal" tabindex="-1" aria-labelledby="missao" aria-hidden="true">
+
+          <div class="modal modal-fullscreen-sm-down fade" id="oracao-modal" tabindex="-1" aria-labelledby="missao"
+            aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header border-0">
@@ -130,18 +132,20 @@
               </div>
             </div>
           </div>
-  
+
           <div class="col">
             <div class="card card-cover card-hover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0"
               style="background: url('./assets/images/home-bible.jpg') no-repeat; background-size: cover;"
-              data-bs-toggle="modal" data-bs-target="#biblia-modal">
+              data-bs-toggle="modal" data-bs-target="#biblia-modal" data-aos="fade-in" data-aos-duration="1000"
+              data-aos-offset="400" data-aos-delay="1000">
               <div class="d-flex flex-column h-100 p-5 text-shadow-1">
                 <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Biblia</h3>
               </div>
             </div>
           </div><!-- /col -->
-  
-          <div class="modal modal-fullscreen-sm-down fade" id="biblia-modal" tabindex="-1" aria-labelledby="missao" aria-hidden="true">
+
+          <div class="modal modal-fullscreen-sm-down fade" id="biblia-modal" tabindex="-1" aria-labelledby="missao"
+            aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header border-0">
@@ -154,19 +158,20 @@
               </div>
             </div>
           </div>
-  
+
         </div><!-- /row -->
 
       </div><!-- /container -->
 
     </section>
 
-    <section class="page__main__section">
+    <section class="page__main__section" id="quem-somos">
       <div class="container">
+        <h2 class="fw-bold mb-5 display-5">Saiba mais sobre nos</h2>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-7">
-            <h2 class="fw-bold mb-5">Saiba mais sobre nos</h2>
-            <div id="carouselExample" class="carousel slide p-3 text-light bg-secondary bg-gradient rounded">
+            <div data-aos="fade-up" data-aos-duration="2000" id="carouselExample"
+              class="carousel slide p-3 text-light bg-secondary bg-gradient rounded">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="px-5 py-4">
@@ -199,36 +204,38 @@
               </button>
             </div>
           </div>
-          <div class="col-12 col-md-6 col-lg-3 offset-lg-1 d-flex align-items-center justify-content-center mt-5 mt-md-0">
-            <img src="./assets/images/IPB.png" alt="Igreja Presbiteriana do Brasil" style="width: 200px;">
+          <div
+            class="col-12 col-md-6 col-lg-3 offset-lg-1 d-flex align-items-center justify-content-center mt-5 mt-md-0">
+            <img data-aos="fade-up-left" data-aos-delay="300" data-aos-duration="2000" src="./assets/images/IPB.png"
+              alt="Igreja Presbiteriana do Brasil" style="width: 200px;">
           </div>
         </div>
       </div>
     </section>
 
-    <section class="page__main__section">
-      <div class="container">
-        <h2 class="fw-bold text-center">Lideranca</h2>
-        <p class="d-lg-none text-center mb-5 mx-auto text-dark-emphasis">
-          As Igrejas Presbiterianas possuem vários perfis de ministérios que 
+    <section class="page__main__section" id="lideranca">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="fw-bold text-center display-5">Lideranca</h2>
+        <p class="d-lg-none text-center mb-5 mx-auto text-dark-emphasis lead">
+          As Igrejas Presbiterianas possuem vários perfis de ministérios que
           atendem a comunidade, o culto e as pessoas que necessitam de alguma ajuda.
         </p>
-        <p class="d-none d-lg-block text-center mb-5 w-50 mx-auto text-dark-emphasis">
-          As Igrejas Presbiterianas possuem vários perfis de ministérios que 
+        <p class="d-none d-lg-block text-center mb-5 w-50 mx-auto text-dark-emphasis lead">
+          As Igrejas Presbiterianas possuem vários perfis de ministérios que
           atendem a comunidade, o culto e as pessoas que necessitam de alguma ajuda.
         </p>
         <div class="row">
-          <div class="col text-center">
+          <div class="col text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
             <img class="rounded-3 shadow-lg" src="./assets/images/home-pastor.jpg" alt="" style="width: 95px;">
             <h4 class="fw-semibold mb-1 mt-3">Pr. Daniel Alves</h4>
             <p class="text-muted">Pastor Titular</p>
           </div>
-          <div class="col text-center">
+          <div class="col text-center" data-aos="fade-up" data-aos-delay="650" data-aos-duration="1500">
             <img class="rounded-3 shadow-lg" src="./assets/images/home-pastor.jpg" alt="" style="width: 95px;">
             <h4 class="fw-semibold mb-1 mt-3">Pr. Diego</h4>
             <p class="text-muted">Pastor Substituto</p>
           </div>
-          <div class="col text-center">
+          <div class="col text-center" data-aos="fade-up" data-aos-delay="850" data-aos-duration="1500">
             <img class="rounded-3 shadow-lg" src="./assets/images/home-pastor.jpg" alt="" style="width: 95px;">
             <h4 class="fw-semibold mb-1 mt-3">Bes. Everton</h4>
             <p class="text-muted">Auxiliar</p>
@@ -237,39 +244,44 @@
       </div>
     </section>
 
-    <section class="page__main__section">
+    <section class="page__main__section mb-0 bg-light py-5">
       <div class="container">
         <div class="row">
           <div class="col col-lg-7">
             <img class="img-fluid rounded-4" src="./assets/images/mapa.png" alt="mapa">
           </div>
           <div class="col col-lg-4 offset-lg-1">
-            <div class="mb-5">
-              <h2 class="fw-bold">Onde nos encontrar</h2>
-              <h4 class="fw-bold mt-4 text-body-secondary">IPB Veranopolis</h4>
-              <div class="d-inline-flex mt-4">
-                <img class="img-fluid" src="./assets/images/pin.png" alt="mapa pin" style="width: 35px; height: 45px;">
-                <div class="ms-4">
-                  <span>Rua Gal. Flores da Cunha, 403</span>
-                  <span>Sala 01, Centro, Veranópolis</span>
+            <div data-aos="fade-left" data-aos-duration="3000">
+              <div class="mb-5" id="endereco">
+                <h2 class="fw-bold">Onde nos encontrar</h2>
+                <h4 class="fw-bold mt-4 text-body-secondary">IPB Veranopolis</h4>
+                <div class="d-inline-flex mt-4">
+                  <img class="img-fluid" src="./assets/images/pin.png" alt="mapa pin"
+                    style="width: 35px; height: 45px;">
+                  <div class="ms-4">
+                    <span>Rua Gal. Flores da Cunha, 403</span>
+                    <span>Sala 01, Centro, Veranópolis</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <hr>
-            <div class="mt-5">
-              <h2 class="fw-bold">Nossas programacoes</h2>
-              <h4 class="fw-bold mt-4 text-body-secondary">Culto Solene</h4>
-              <div class="d-inline-flex mt-4">
-                <img class="img-fluid" src="./assets/images/schedule.png" alt="mapa pin" style="width: 35px; height: 35px;">
-                <div class="ms-4">
-                  <span>Domingo as 19hs</span>
+              <hr>
+              <div class="mt-5">
+                <h2 class="fw-bold">Nossas programação</h2>
+                <h4 class="fw-bold mt-4 text-body-secondary">Culto Solene</h4>
+                <div class="d-inline-flex mt-4">
+                  <img class="img-fluid" src="./assets/images/schedule.png" alt="mapa pin"
+                    style="width: 35px; height: 35px;">
+                  <div class="ms-4">
+                    <span>Domingo às 19hs</span>
+                  </div>
                 </div>
-              </div>
-              <h4 class="fw-bold mt-4 text-body-secondary">Estudo Biblico</h4>
-              <div class="d-inline-flex mt-4">
-                <img class="img-fluid" src="./assets/images/schedule.png" alt="mapa pin" style="width: 35px; height: 35px;">
-                <div class="ms-4">
-                  <span>Quinta-feira as 20hs</span>
+                <h4 class="fw-bold mt-4 text-body-secondary">Estudo Bíblico</h4>
+                <div class="d-inline-flex mt-4">
+                  <img class="img-fluid" src="./assets/images/schedule.png" alt="mapa pin"
+                    style="width: 35px; height: 35px;">
+                  <div class="ms-4">
+                    <span>Quinta-feira às 20hs</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -277,6 +289,84 @@
         </div>
       </div>
     </section>
+
+    <section class="page__main__section mt-0">
+      <div class="container p-5" data-aos="fade-up" data-aos-duration="2000">
+        <div class="p-5 mb-4 bg-light rounded-3">
+          <h1 class="display-5 fw-bold">Doação</h1>
+          <div class="row">
+            <div class="col">
+              <p class="col-md-8 fs-4">
+                Contribuições podem ser feitas através dos meios eletrônicos:
+              </p>
+              <div class="d-flex align-items-center mb-4">
+                <img class="img-fluid me-4" src="./assets/images/bradesco.png" alt="bradesco icone" style="width: 105px;" />
+                <p class="fs-5">Ag: 0275 C/C: 2204-7</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="img-fluid me-4" src="./assets/images/pix.png" alt="bradesco icone" style="width: 105px;" />
+                <p class="fs-5">
+                  Chave PIX: 15.210.813/0001-83 (CPNJ)
+                </p>
+              </div>
+            </div>
+            <div class="col justify-content-center d-flex">
+              <img class="img-fluid" src="./assets/images/qrcode.png" alt="qrcode" style="width: 255px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-top">
+      <div class="container">
+        <footer class="py-5">
+          <div class="row">
+      
+            <div class="col-6 col-md-4 mb-3">
+              <img style="width: 200px;" class="img-fluid" src="./assets/images/logo-dark.png" alt="Igreja Presbiteriana do Brasil - Veranopolis / RS">
+            </div>
+      
+            <div class="col-6 col-md-4 mb-3">
+              <ul class="nav flex-column text-center">
+                <li class="nav-item mb-2"><a href="#quem-somos" class="nav-link p-0 text-muted">Quem somos</a></li>
+                <li class="nav-item mb-2"><a href="#lideranca" class="nav-link p-0 text-muted">Liderança</a></li>
+                <li class="nav-item mb-2"><a href="#endereco" class="nav-link p-0 text-muted">Endereço</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-12 col-md-4 mb-3">
+              <blockquote class="blockquote">
+                <p class="text-end">"...a Igreja do Deus vivo, a coluna e firmeza da verdade."</p>
+                <p class="fw-bold text-end">1 Timóteo 3: 15</p>
+              </blockquote>
+            </div>
+
+          </div>
+      
+          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>© 2023 IPB Veranopólis</p>
+            <ul class="list-unstyled d-flex">
+              <li class="ms-5">
+                <a class="link-dark" href="https://www.youtube.com/@ipbveranopolis" target="_blank">
+                  <img style="width: 35px;" src="./assets/images/youtube.png" alt="youtube">
+                </a>
+              </li>
+              <li class="ms-5">
+                <a class="link-dark" href="https://www.instagram.com/ipbveranopolis/?hl=en" target="_blank">
+                  <img style="width: 35px;" src="./assets/images/instagram.png" alt="instagram">
+                </a>
+              </li>
+              <li class="ms-5">
+                <a class="link-dark" href="mailto:ipbveranopolis@gmail.com?subject=Contato [Website]">
+                  <img style="width: 35px;" src="./assets/images/gmail.png" alt="gmail">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+    </footer>
 
   </main>
 
@@ -286,6 +376,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
