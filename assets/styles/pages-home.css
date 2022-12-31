@@ -13,4 +13,5 @@
   left: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1), transparent 30%);
+  backdrop-filter: saturate(0.5);
 }
