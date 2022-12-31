@@ -1,0 +1,5 @@
+.card-hover:hover {
+  filter: grayscale(100%);
+  transform: scale(0.98);
+  transition: all var(--card-hover-timing) ease;
+}

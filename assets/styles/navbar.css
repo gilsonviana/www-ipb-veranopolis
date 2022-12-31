@@ -1,0 +1,8 @@
+.header__mast {
+  -webkit-backdrop-filter: saturate(180%) blur(40px);
+  backdrop-filter: saturate(180%) blur(40px);
+}
+
+.header__navbar__logo {
+  width: 75px;
+}

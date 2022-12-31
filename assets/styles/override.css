@@ -1,0 +1,8 @@
+.btn-primary {
+  --bs-btn-bg: var(--color-secondary) !important;
+  --bs-btn-border-color: var(--color-secondary) !important;
+  --bs-btn-hover-bg: var(--color-primary) !important;
+  --bs-btn-hover-border-color: var(--color-primary) !important;
+  --bs-btn-active-bg: var(--color-primary) !important;
+  --bs-btn-active-border-color: var(--color-primary) !important;
+}

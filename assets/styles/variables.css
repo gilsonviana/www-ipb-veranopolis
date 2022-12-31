@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #005C40;
+  --color-secondary: #70B371;
+
+  --section-gap: 10rem;
+
+  --card-hover-timing: 0.2s;
+}

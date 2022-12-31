@@ -1,0 +1,18 @@
+@import url('./navbar.css');
+@import url('./cards.css');
+
+.page__main__section {
+  position: relative;
+  margin-top: var(--section-gap);
+  margin-bottom: var(--section-gap);
+}
+
+.page__main__section__bg, 
+.page__main__section__overlay {
+  background: rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0
+}
