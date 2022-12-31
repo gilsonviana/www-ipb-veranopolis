@@ -1,0 +1,16 @@
+#quem-somos {
+  background: url('../images/home-bkg.jpg') no-repeat;
+  background-attachment: fixed;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+#quem-somos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), transparent 30%);
+}

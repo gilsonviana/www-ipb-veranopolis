@@ -5,14 +5,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IPB - Veranopolis</title>
-  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <meta name="description" content="Uma Igreja calvinista que busca ter caráter cristão autêntico, disposta a
+  estender seu amor a todos que se achegam a ela.">
+  <title>IPB - Veranopólis</title>
+  <link rel="stylesheet" href="./assets/styles/pages-home.css" defer>
+  <link rel="stylesheet" href="./assets/styles/styles.css" defer>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" defer>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" defer />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+    async></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RTJJ5DT8W0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RTJJ5DT8W0');
+  </script>
 </head>
 
 <body class="page">
@@ -64,7 +76,7 @@
 
         <div class="px-4 pt-5 my-5 text-center">
           <h4 class="display-4 fw-bold">Igreja Presbiteriana do Brasil</h4>
-          <h1 class="display-1 fw-bold">Veranopólis</h1>
+          <h1 class="display-1 fw-bold">Veranopólis / RS</h1>
           <div class="col-lg-6 mx-auto">
             <p class="lead m-4">
               Uma Igreja calvinista que busca ter caráter cristão autêntico, disposta a
@@ -73,13 +85,13 @@
               norteiem a vida, o culto e a teologia.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center m-5">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+              <a type="button" class="btn btn-primary btn-lg px-4 me-sm-3" href="#nosso-compromisso">Compromisso</a>
+              <a type="button" class="btn btn-outline-secondary btn-lg px-4" href="#endereco">Endereço</a>
             </div>
           </div>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5" id="nosso-compromisso">
 
           <div class="col">
             <div class="card card-cover card-hover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg border-0"
@@ -167,11 +179,11 @@
 
     <section class="page__main__section" id="quem-somos">
       <div class="container">
-        <h2 class="fw-bold mb-5 display-5">Saiba mais sobre nos</h2>
+        <h2 class="fw-bold mb-5 mt-5 display-5">Saiba mais sobre nos</h2>
         <div class="row">
           <div class="col-12 col-md-6 col-lg-7">
             <div data-aos="fade-up" data-aos-duration="2000" id="carouselExample"
-              class="carousel slide p-3 text-light bg-secondary bg-gradient rounded">
+              class="carousel slide py-3 px-4 text-light bg-secondary bg-gradient rounded">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="px-5 py-4">
@@ -214,7 +226,7 @@
     </section>
 
     <section class="page__main__section" id="lideranca">
-      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
         <h2 class="fw-bold text-center display-5">Lideranca</h2>
         <p class="d-lg-none text-center mb-5 mx-auto text-dark-emphasis lead">
           As Igrejas Presbiterianas possuem vários perfis de ministérios que
@@ -247,10 +259,10 @@
     <section class="page__main__section mb-0 bg-light py-5">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-7">
+          <div class="col-12 col-lg-7">
             <img class="img-fluid rounded-4" src="./assets/images/mapa.png" alt="mapa">
           </div>
-          <div class="col col-lg-4 offset-lg-1">
+          <div class="col-12 col-lg-4 offset-lg-1">
             <div data-aos="fade-left" data-aos-duration="3000">
               <div class="mb-5" id="endereco">
                 <h2 class="fw-bold">Onde nos encontrar</h2>
@@ -290,8 +302,8 @@
       </div>
     </section>
 
-    <section class="page__main__section mt-0">
-      <div class="container p-5" data-aos="fade-up" data-aos-duration="2000">
+    <section class="page__main__section mt-2 mt-lg-0">
+      <div class="container p-lg-5" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">
         <div class="p-5 mb-4 bg-light rounded-3">
           <h1 class="display-5 fw-bold">Doação</h1>
           <div class="row">
@@ -300,17 +312,21 @@
                 Contribuições podem ser feitas através dos meios eletrônicos:
               </p>
               <div class="d-flex align-items-center mb-4">
-                <img class="img-fluid me-4" src="./assets/images/bradesco.png" alt="bradesco icone" style="width: 105px;" />
-                <p class="fs-5">Ag: 0275 C/C: 2204-7</p>
+                <img class="img-fluid me-4" src="./assets/images/bradesco.png" alt="bradesco icone"
+                  style="width: 105px;" />
+                <div class="text-dark-emphasis">
+                  <p class="fs-5 m-0">Ag: 0275</p>
+                  <p class="fs-5 m-0">C/C: 2204-7</p>
+                </div>
               </div>
               <div class="d-flex align-items-center">
                 <img class="img-fluid me-4" src="./assets/images/pix.png" alt="bradesco icone" style="width: 105px;" />
-                <p class="fs-5">
-                  Chave PIX: 15.210.813/0001-83 (CPNJ)
+                <p class="fs-5 text-dark-emphasis">
+                  Chave PIX: 15.210.813/0001-83 (CNPJ)
                 </p>
               </div>
             </div>
-            <div class="col justify-content-center d-flex">
+            <div class="col justify-content-center d-lg-flex d-none">
               <img class="img-fluid" src="./assets/images/qrcode.png" alt="qrcode" style="width: 255px;">
             </div>
           </div>
@@ -322,11 +338,12 @@
       <div class="container">
         <footer class="py-5">
           <div class="row">
-      
+
             <div class="col-6 col-md-4 mb-3">
-              <img style="width: 200px;" class="img-fluid" src="./assets/images/logo-dark.png" alt="Igreja Presbiteriana do Brasil - Veranopolis / RS">
+              <img style="width: 200px;" class="img-fluid" src="./assets/images/logo-dark.png"
+                alt="Igreja Presbiteriana do Brasil - Veranopolis / RS">
             </div>
-      
+
             <div class="col-6 col-md-4 mb-3">
               <ul class="nav flex-column text-center">
                 <li class="nav-item mb-2"><a href="#quem-somos" class="nav-link p-0 text-muted">Quem somos</a></li>
@@ -334,7 +351,7 @@
                 <li class="nav-item mb-2"><a href="#endereco" class="nav-link p-0 text-muted">Endereço</a></li>
               </ul>
             </div>
-      
+
             <div class="col-12 col-md-4 mb-3">
               <blockquote class="blockquote">
                 <p class="text-end">"...a Igreja do Deus vivo, a coluna e firmeza da verdade."</p>
@@ -343,7 +360,7 @@
             </div>
 
           </div>
-      
+
           <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2023 IPB Veranopólis</p>
             <ul class="list-unstyled d-flex">
@@ -370,16 +387,16 @@
 
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
-    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"
+    async></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"
+    async></script>
 </body>
 
 </html>
